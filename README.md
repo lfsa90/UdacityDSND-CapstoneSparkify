@@ -37,7 +37,7 @@ This project has 4 main stages:
     1. Define Churn & Downgrades from the original features
     2. Explore data (analysing interactions from both type of users: those who churned and those who didn't)
 3. Feature Engineering
-    1. Build meaningfull features from the original dataset for each user, that represent the overall experience in Sparkify
+    1. Build meaningful features from the original dataset for each user, that represent the overall experience in Sparkify
     2. Save final dataset with engineered features
 4. Model training and Prediction
     1. Split data into training and testing data sets
