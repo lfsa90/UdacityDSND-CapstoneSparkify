@@ -50,7 +50,7 @@ This workspace contains a tiny subset (128MB) of the full dataset available (12G
 
 #### Problem Definition
 
-The aim of this project is to predict customer churn based on its usage history/log. For that purpose it will be needed to generate new meaningfull features that characterize user experience in Sparkify, so that we can use a machine learning model to predict which customers are likely to churn.
+The aim of this project is to predict customer churn based on its usage history/log. For that purpose it will be needed to generate new meaningful features that characterize user experience in Sparkify, so that we can use a machine learning model to predict which customers are likely to churn.
 
 For the prediction part I'll be using use F1 score to select the best machine learning model since the churned users are a fairly small subset (highly imbalanced dataset).
    
