@@ -45,7 +45,8 @@ The data provided is the log of the users interactions with the service/applicat
  |-- status: long (nullable = true)
  |-- ts: long (nullable = true)
  |-- userAgent: string (nullable = true)
- |-- userId: string (nullable = true)`
+ |-- userId: string (nullable = true)
+ `
  
 This project has 4 main stages:
 1. Loading and cleaning data
