@@ -60,10 +60,12 @@ UdacityDSND-CapstoneSparkify/
 ├── Sparkify.ipynb
 ├── data_final_spark.csv.zip
 ├── mini_sparkify_event_data.zip
+├── Sparkify.html
 ```
 * __Sparkify.ipynb__: Notebook with all the scripts used to analyse data and to address the churn prediction problem
 * __data_final_spark.csv.zip__: final data set after feature engineering (in spark format) - must be unzipped!
 * __mini_sparkify_event_data.zip__: tiny subset (128MB) of the full dataset available (12GB) - must be unzipped!
+* __Sparkify.ipynb__: .html version of the jupyter notebook
 
 ## Results <a name="Results"></a>
 The detailed analysis and main conclusions/results are availabe in [here](https://medium.com/@luisf.almeida90/dont-let-them-go-sparkify-82eb422379f1).
