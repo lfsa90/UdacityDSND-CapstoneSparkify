@@ -22,12 +22,55 @@ Capstone Project - Sparkify
 ## Introduction / Motivation <a name="Introduction"></a>
 This is an Udacity Data Science Nanodegree project.
 
-For this project I chose Airbnb-Lisbon (my hometown) 2019 dataset ([here](http://insideairbnb.com/get-the-data.html)), and was mainly interested in finding the answers to the following questions:
-1) How does price fluctuate over time?;
-2) What is the availability trend over time?;
-3) What type of listings do we have in Lisbon? - price range, house types and listings by neighbourood;
-4) How is availability related wity price, host type, number of reviews and scores, and room type?;
-5) Price preditction - main factors influencing price.
+#### Intro
+Sparkify is a music streaming service (similar to Apple Music and Spotify), and can be used for free, or if the customer wants there are also paid plans which eliminate advertising.
+
+The data provided is the log of the users interactions with the service/application. Every event/interaction is recorded with the following information:
+
+`root
+ |-- artist: string (nullable = true)
+ |-- auth: string (nullable = true)
+ |-- firstName: string (nullable = true)
+ |-- gender: string (nullable = true)
+ |-- itemInSession: long (nullable = true)
+ |-- lastName: string (nullable = true)
+ |-- length: double (nullable = true)
+ |-- level: string (nullable = true)
+ |-- location: string (nullable = true)
+ |-- method: string (nullable = true)
+ |-- page: string (nullable = true)
+ |-- registration: long (nullable = true)
+ |-- sessionId: long (nullable = true)
+ |-- song: string (nullable = true)
+ |-- status: long (nullable = true)
+ |-- ts: long (nullable = true)
+ |-- userAgent: string (nullable = true)
+ |-- userId: string (nullable = true)`
+ 
+This project has 4 main stages:
+1. Loading and cleaning data
+    1. Load dataset
+    2. Cleaning missing or invalid data
+2. Exploratory Data Analysis
+    1. Define Churn & Downgrades from the original features
+    2. Explore data (analysing interactions from both type of users: those who churned and those who didn't)
+3. Feature Engineering
+    1. Build meaningfull features from the original dataset for each user, that represent the overall experience in Sparkify
+    2. Save final dataset with engineered features
+4. Model training and Prediction
+    1. Split data into training and testing data sets
+    2. Train several classification models & Hyperparameter tunning with Grid Search
+    3. Select best machine learning model based on f1score
+
+In this project I'll be using Spark (PySpark) for all the data manipulation, loading, cleaning, feature engineering and Machine Learning.
+This workspace contains a tiny subset (128MB) of the full dataset available (12GB). This workspace is used to build the project, or to explore a smaller subset with Spark. The code can then be deployed on the cloud.
+
+
+#### Problem Definition
+
+The aim of this project is to predict customer churn based on its usage history/log. For that purpose it will be needed to generate new meaningfull features that characterize user experience in Sparkify, so that we can use a machine learning model to predict which customers are likely to churn.
+
+For the prediction part I'll be using use F1 score to select the best machine learning model since the churned users are a fairly small subset (highly imbalanced dataset).
    
 ## Data <a name="Data"></a>
 ```text
