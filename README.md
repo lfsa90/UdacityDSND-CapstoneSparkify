@@ -56,18 +56,14 @@ For the prediction part I'll be using use F1 score to select the best machine le
    
 ## Data <a name="Data"></a>
 ```text
-DataScience-LisbonAirbnb/
-├── DataScience-LisbonAirbnb.ipynb
-├── utility.py
-└── data/
-    ├── listings_complete.csv
-    ├── calendar.csv
-    ├── listings.csv
+UdacityDSND-CapstoneSparkify/
+├── Sparkify.ipynb
+├── data_final_spark.csv
+├── mini_sparkify_event_data.zip
 ```
-* __DataScience-LisbonAirbnb.ipynb__: Notebook with all the scripts used to analyse data and to answer the questions mentioned above
-* __Data/listings.csv__: Listings data for Lisbon ([Airbnb](https://airbnb.com/))
-* __Data/listings_complete.csv__: Detailed Listings data for Lisbon ([Airbnb](https://airbnb.com/))
-* __Data/calendar.csv__: Detailed Calendar Data for listings in Lisbon ([Airbnb](https://airbnb.com/))
+* __Sparkify.ipynb__: Notebook with all the scripts used to analyse data and to address the churn prediction problem
+* __data_final_spark.csv__: final data set after feature engineering (in spark format)
+* __mini_sparkify_event_data.zip__: tiny subset (128MB) of the full dataset available (12GB) - must be unzipped!
 
 ## Results <a name="Results"></a>
 The detailed analysis and main conclusions/results are availabe in [here](https://medium.com/@luisf.almeida90/lisbon-an-amazing-destination-b36edff06967)).
@@ -99,4 +95,3 @@ The features which characterize the house/listing topology (bathrooms, bedrooms,
 
 ## Licensing, Authors, and Acknowledgements <a name="Licensing"></a>
 * Thanks to Udacity for all the useful insights and interesting challenges!
-* Thanks to Airbnb for making these data sets available to everyone!
