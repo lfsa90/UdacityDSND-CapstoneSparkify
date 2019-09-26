@@ -27,7 +27,7 @@ Sparkify is a music streaming service (similar to Apple Music and Spotify), and 
 
 The data provided is the log of the users interactions with the service/application. Every event/interaction is recorded with the following information:
 
-![data_structure](data_structure.png)
+![data_structure](data_structure.PNG)
  
 This project has 4 main stages:
 1. Loading and cleaning data
