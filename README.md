@@ -58,37 +58,36 @@ For the prediction part I'll be using use F1 score to select the best machine le
 ```text
 UdacityDSND-CapstoneSparkify/
 ├── Sparkify.ipynb
-├── data_final_spark.csv
+├── data_final_spark.csv.zip
 ├── mini_sparkify_event_data.zip
 ```
 * __Sparkify.ipynb__: Notebook with all the scripts used to analyse data and to address the churn prediction problem
-* __data_final_spark.csv__: final data set after feature engineering (in spark format)
+* __data_final_spark.csv__: final data set after feature engineering (in spark format) - must be unzipped!
 * __mini_sparkify_event_data.zip__: tiny subset (128MB) of the full dataset available (12GB) - must be unzipped!
 
 ## Results <a name="Results"></a>
 The detailed analysis and main conclusions/results are availabe in [here]https://medium.com/@luisf.almeida90/dont-let-them-go-sparkify-82eb422379f1)).
 
-* Price fluctuation over time
+* Model Training with Hyperparameter Tuning with Grid Search - outcome
 
-![price_vs_time](price_vs_time.png)
-For 2019, the prices decrease after Summer time until December.
-Then, close to New Year's Eve, there is sudden increase in average price as it would be expected.
-For 2020, the prices are considerably higher than in 2019, and seem to steadily increase from the begining of the year.
+![traincla](model_classifiers.PNG)
 
 
-* Listings - price tag and property types
+| Classifier                | Accuracy  | f1score  | Time      |
+| ------------------------- |:---------:|:--------:| ---------:|
+| Random Forest Classifier  | 0.777778  | 0.747710 | 50.091728 |
+| Gradient Boosted Trees    | 0.740741  | 0.690657 | 95.441571 |
+| Decision Tree Classifier  | 0.722222  | 0.702811 | 56.105295 | 
+| Logistic Regression       | 0.759259  | 0.720124 | 63.920029 |
+| Linear SVC                | 0.722222  | 0.605735 | 47.068066 |
 
-![pricetag](pricetag.png)
 
-![proptype](proptype.png)
-
-As seen in the bar chart above, most of the listings have a price tag between 20\\$ and 140\\$
-Also, the most frequent property type is apartment, followed up by (entire) house.
+The best classifier seems to be _Random Forest_, which achieved ~**78% accuracy** and **0,75 f1 Score**. 
 
 
-* Main factors influencing price
+* Main factors influencing price - feature importance
 
-![pricepred](pricepred.png)
+![featimp](feature_importance.PNG)
 
 The features which characterize the house/listing topology (bathrooms, bedrooms, accomodates) are on the top 5 of the top 10 important features, meaning these features have a high impact on the price.
 
