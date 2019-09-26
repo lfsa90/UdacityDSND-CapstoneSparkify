@@ -66,7 +66,7 @@ UdacityDSND-CapstoneSparkify/
 * __mini_sparkify_event_data.zip__: tiny subset (128MB) of the full dataset available (12GB) - must be unzipped!
 
 ## Results <a name="Results"></a>
-The detailed analysis and main conclusions/results are availabe in [here]https://medium.com/@luisf.almeida90/dont-let-them-go-sparkify-82eb422379f1)).
+The detailed analysis and main conclusions/results are availabe in [here]((https://medium.com/@luisf.almeida90/dont-let-them-go-sparkify-82eb422379f1)).
 
 * Model Training with Hyperparameter Tuning with Grid Search - outcome
 
@@ -89,7 +89,7 @@ The best classifier seems to be _Random Forest_, which achieved ~**78% accuracy*
 
 ![featimp](feature_importance.PNG)
 
-The features which characterize the house/listing topology (bathrooms, bedrooms, accomodates) are on the top 5 of the top 10 important features, meaning these features have a high impact on the price.
+When looking at the feature importance, the _lifetime_ stands out meaning it has a really important role in whether the user is prone to churn or not. The second most relevant feature is _Thumbs down_ which might be easier to understand since higher number of thumbs down might indicate the user is not satisfied with the songs that are being suggested by the application.
 
 
 ## Licensing, Authors, and Acknowledgements <a name="Licensing"></a>
