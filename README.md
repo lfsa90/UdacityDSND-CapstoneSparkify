@@ -66,7 +66,7 @@ UdacityDSND-CapstoneSparkify/
 * __mini_sparkify_event_data.zip__: tiny subset (128MB) of the full dataset available (12GB) - must be unzipped!
 
 ## Results <a name="Results"></a>
-The detailed analysis and main conclusions/results are availabe in [here](https://medium.com/@luisf.almeida90/lisbon-an-amazing-destination-b36edff06967)).
+The detailed analysis and main conclusions/results are availabe in [here]https://medium.com/@luisf.almeida90/dont-let-them-go-sparkify-82eb422379f1)).
 
 * Price fluctuation over time
 
