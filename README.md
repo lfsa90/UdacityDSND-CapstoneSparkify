@@ -12,10 +12,12 @@ Capstone Project - Sparkify
 
 ## Installation <a name="Installation"></a>
 * The code was developed and tested on anaconda with python 3.73. Nevertheless, it should run with no issues using Python 3.* in any other environment.
-* The datasets must be downlowaded from the Airbnb website/data repository, unziped, and placed in the '/Data' folder:
-    * ([listings_complete.csv](http://data.insideairbnb.com/portugal/lisbon/lisbon/2019-06-26/data/listings.csv.gz)). Important: this file must be renamed to 'listings_complete.csv';
-    * ([calendar.csv](http://data.insideairbnb.com/portugal/lisbon/lisbon/2019-06-26/data/calendar.csv.gz));
-    * ([listings.csv](http://data.insideairbnb.com/portugal/lisbon/lisbon/2019-06-26/visualisations/listings.csv)).
+* The dataset (tiny subset) is included in this rep.
+* Libraries needed:
+  * PySpark;
+  * Pandas;
+  * Seaborn 0.9+;
+  * Matplotlib.
 
 ## Introduction / Motivation <a name="Introduction"></a>
 This is an Udacity Data Science Nanodegree project.
